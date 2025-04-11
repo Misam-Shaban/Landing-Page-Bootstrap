@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Setup -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LANDING-PAGE-BOOTSTRAP</title>  
+    
+    <!-- Bootstrap 5 CSS CDN for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons CDN for social icons etc. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+
+    <!-- 🌟 NAVBAR START: Top menu bar for navigation -->
+    <div id="home" class="nav-bar">
+        <nav class="navbar navbar-expand-lg" style="background-color: #afcfc5;">
+            <div class="container">
+              <!-- Logo or Brand Name -->
+              <a class="navbar-brand fs-4 fw-bold" style="color: #41484d;" href="#">MISAM-SHABAN</a>
+
+              <!-- Hamburger button for mobile menu -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Navbar Links -->
+              <div class="">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav fs-5">
+                      <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#slider">Slider</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#cards">Cards</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <!-- 🌟 NAVBAR END -->
+
+    <!-- 🎞️ SLIDER START: Image carousel -->
+    <div id="slider" class="slider">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="img.jpg" class="d-block w-100 object-fit-fill" alt="..." height="750">
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="img1.jpg" class="d-block w-100 object-fit-fill" alt="..." height="750">
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="img2.jpg" class="d-block w-100 object-fit-fill" alt="..." height="750">
+            </div>
+          </div>
+          <!-- Carousel Navigation Buttons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+    </div>
+    <!-- 🎞️ SLIDER END -->
+
+    <hr>
+
+    <!-- 🃏 CARDS SECTION START: Showcasing info in card format -->
+    <div id="cards" class="container row mx-auto text-center">
+      <!-- Card 1 -->
+      <div class="card col-lg-4 col-md-6 col-sm-12 mx-auto border-0 ">
+        <img src="img.jpg" class="card-img-top object-fit-cover" alt="..." height="200">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card col-lg-4 col-md-6 col-sm-12 mx-auto border-0">
+        <img src="img1.jpg" class="card-img-top object-fit-cover" alt="..." height="200">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card col-lg-4 col-md-6 col-sm-12 mx-auto border-0">
+        <img src="img2.jpg" class="card-img-top object-fit-cover" alt="..." height="200">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- 🃏 CARDS SECTION END -->
+
+    <!-- 💡 FEATURES SECTION START: Highlighting special features -->
+    <div id="features" class="container">
+      <div class="card text-center">
+        <!-- Section Header -->
+        <div class="card-header fs-4 lead fw-bolder">
+          Featured
+        </div>
+
+        <!-- Feature Block 1 -->
+        <div class="card-body">
+          <div class="container-fluid row d-flex align-items-center">
+            <div class="col-lg-6 col-sm-12">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-outline-primary">Go somewhere</a>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <img src="img.jpg" class="card-img-top object-fit-cover text-center" alt="..." width="250" height="250">
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <!-- Feature Block 2 -->
+        <div class="card-body">
+          <div class="container-fluid row d-flex align-items-center">
+            <div class="col-lg-6 col-sm-12">
+              <img src="img1.jpg" class="card-img-top object-fit-cover text-center" alt="..." width="250" height="250">
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-outline-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <!-- Feature Block 3 -->
+        <div class="card-body">
+          <div class="container-fluid row d-flex align-items-center">
+            <div class="col-lg-6 col-sm-12">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-outline-primary" >Go somewhere</a>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <img src="img2.jpg" class="card-img-top object-fit-cover text-center" alt="..." width="250" height="250">
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <!-- Empty footer (you can add something if needed) -->
+        <div class="card-footer text-body-secondary"></div>
+      </div>
+    </div>
+    <hr>
+    <!-- 💡 FEATURES SECTION END -->
+
+    <!-- 📞 FOOTER START: Contact info + social links -->
+    <div id="footer" class="navbar navbar-expand-lg d-flex justify-content-around" style="background-color: #afcfc5;">
+      <p class="fs-5 lead fw-normal">&copy; COPYRIGHT MOHIT CODES 2024</p>
+      <!-- Social media icons -->
+      <div class="btn-group text-right" role="group" aria-label="Basic outlined example">
+          <a href="https://www.youtube.com/" target="_blank" type="button" class="btn btn-outline-dark"><i class="bi bi-youtube"></i></a>
+          <a href="https://github.com/Misam-Shaban" target="_blank" type="button" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/maysam-shaban/" target="_blank" type="button" class="btn btn-outline-dark"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+    <!-- 📞 FOOTER END -->
+
+    <!-- 🛠️ Bootstrap Bundle JS for all Bootstrap components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
